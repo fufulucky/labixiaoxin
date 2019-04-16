@@ -3,11 +3,29 @@ function BANNER() {
     var animated=false;
     var banner=document.getElementById('banner');
     var buttons=document.getElementById('botton').getElementsByTagName('span');
-
     var pre=document.getElementById('prev');
     var next=document.getElementById('next');
     var timer;
     var index=1;
+    var w = document.body.clientWidth
+    var BU=document.getElementById('botton');
+    banner.style.width = 4*w+40+"px";
+    console.log(banner.style.width)
+    container.style.width=w+"px";
+    console.log(container.style.width)
+    container.style.height=w/3.5+"px";
+    console.log(container.style.height)
+    pre.style.top=w/8.2+"px";
+    next.style.top=w/8.2+"px";
+    BU.style.left = w/2+"px"
+    imgs=banner.getElementsByTagName("img");
+    for (var j =0;j<imgs.length;j++){
+        imgs[j].style.width = w + "px";
+        imgs[j].style.height= w/3.5 +"px";
+    }
+    console.log(banner.getElementsByTagName("img"))
+
+
     function showButton() {
         for (var i = 0; i < buttons.length; i++) {
             if (buttons[i].className == 'on') {
@@ -33,9 +51,9 @@ function BANNER() {
                 animated=false;
                 banner.style.left=newleft+'px';
                 if(newleft>0){
-                    banner.style.left=-4200+'px';
+                    banner.style.left=-w*3+'px';
                 }
-                if(newleft<-4200){
+                if(newleft<-w*3){
                     banner.style.left=0+'px';
                 }
             }
@@ -45,7 +63,7 @@ function BANNER() {
     function play() {
         timer=setInterval(function () {
             next.onclick()
-        },5600);
+        },w*4);
     }
     function stop() {
         clearInterval(timer);
@@ -58,7 +76,7 @@ function BANNER() {
         }
         showButton()
         if (animated==false){
-            animate(-1400)
+            animate(-w)
         }
     }
     pre.onclick=function () {
@@ -70,7 +88,7 @@ function BANNER() {
         }
         showButton();
         if(animated==false){
-            animate(1400);
+            animate(w);
         }
 
     }
@@ -82,7 +100,7 @@ function BANNER() {
             var myindex = parseInt(this.getAttribute('index'));
             console.log(myindex);
             console.log(index)
-            var offset=-1400*(myindex-index)
+            var offset=-w*(myindex-index)
             console.log(offset);
             index = myindex;
             showButton();
@@ -94,8 +112,9 @@ function BANNER() {
     }
     container.onmouseover=stop;
     container.onmouseout=play;
+    console.log(w);
     play();
-    highlight();
+    //highlight();
 }
 addload(BANNER);
 /*

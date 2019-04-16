@@ -46,15 +46,15 @@ article{
     background-image: url("../images/2l.jpg");
 }
 #container{
-    width: 1400px;
-    height: 400px;
+    max-width: 1404px;
+    max-height: 400px;
+/*    width: auto;
+    height: auto;*/
     position: relative;
     overflow: hidden;
     margin: 0 auto;
 }
 #banner{
-    width: 5620px;
-    height: 400px;
     position: absolute;
     z-index: 1;}
 #banner li{
@@ -67,7 +67,7 @@ article{
     width: 100px;
     z-index: 2;
     bottom: 20px;
-    left: 670px;
+//    left: 670px;
 }
 #botton span{
     cursor: pointer;
@@ -92,7 +92,7 @@ article{
     height:50px;
     position:absolute;
     z-index:2;
-    top:170px;
+    //top:170px;
     background-color: RGBA(0,0,0,.1);
     color: white;
 }
