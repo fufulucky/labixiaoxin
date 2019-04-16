@@ -1,0 +1,125 @@
+section,header,article,nav{
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 2em 10%;
+    max-width: 1404px;
+}
+article nav ul{
+    margin: 50px auto;
+
+}
+article nav ul li{
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+header nav .xin{
+    width: 100%;
+    height: 100%;
+    margin: auto;;
+    list-style: none;
+    padding: 0;
+}
+.xin li{
+    display: inline-block;
+    font-weight: bold;
+    width: 274px;
+    height: 40px;
+    border: 2px solid white;
+    margin-right: -1px;
+    text-align: center;
+    line-height: 48px;
+}
+article{
+    border-width: 0.1em;
+    border-style:solid;
+    border-top-width: 0;
+    padding: 2em 10%;
+    line-height: 1.8em;
+}
+
+#about header{
+    background-image: url("../images/2l.jpg");
+}
+#container{
+    width: 1400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#banner{
+    width: 5620px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;}
+#banner li{
+    display: inline-block;
+    list-style: none;
+}
+#botton{
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    z-index: 2;
+    bottom: 20px;
+    left: 670px;
+}
+#botton span{
+    cursor: pointer;
+    float: left;
+    border: 1px solid #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: gainsboro;
+    margin-right: 10px;
+}
+#botton .on{
+    background: slategray;
+}
+.arrow{cursor:pointer;
+    display:none;
+    line-height:50px;
+    text-align:center;
+    font-size:50px;
+    font-weight:bold;
+    width:50px;
+    height:50px;
+    position:absolute;
+    z-index:2;
+    top:170px;
+    background-color: RGBA(0,0,0,.1);
+    color: white;
+}
+.arrow:hover{
+    background-color:RGBA(0,0,0,.1);
+}
+
+#container:hover .arrow{display:block;}
+
+#prev{left:20px;}
+
+#next{right:20px;}
+.showin{
+    width: 70%;
+    margin: 50px auto;
+    border-bottom: solid 1px black;
+    overflow: hidden;
+}
+.showimg{
+    width: 300px;
+    float: right;
+}
+.showimg img{
+    width: 200px;
+    display: block;
+
+}
+.showtext{
+    float: left;
+}

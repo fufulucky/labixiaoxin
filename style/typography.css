@@ -1,0 +1,40 @@
+body{
+    font-size: 100%;
+    font-family: 等线, sans-serif;
+}
+body *{
+    font-size: 1em;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+header nav a{
+    text-decoration: none;
+    font-weight: bold;
+}
+article {
+    line-height: 1.8em;
+}
+article p{
+    margin: 1em 0;
+}
+h1 {
+    font-family: 等线;
+    font: 2em normal;
+
+}
+h2{
+    font-family: 等线;
+    font: 1.5em normal;
+}
+h3{
+    font-family: 等线;
+    font: 1.2em normal;
+}
+#tname1,#tname2, #tname3, #tname4, #tname5{
+    font-family: 等线;
+    font-weight:bold;
+    font-size: 1.2em;
+}

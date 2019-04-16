@@ -1,0 +1,58 @@
+body{
+    color: black;
+    background-color: aliceblue;
+}
+.xin a:link{
+    color: darkslategrey;
+    background-color: white;
+}
+.xin a:visited{
+    color: darkslategrey;
+}
+.xin a:hover{
+    color: lightseagreen;
+}
+.xin a:active{
+    color: lightseagreen;
+}
+header{
+    color: lightcoral;
+    background-color: aliceblue;
+    border-color: #7a97b8;
+}
+header nav{
+    color: #7a97b8;
+    border-color: #7a97b8;
+    background-color: aliceblue;
+}
+article{
+    color: black;
+    background-color:#e1edfa;
+    border-color: #e1edfa;
+
+}
+header nav .xin li{
+    border-color: white;
+    background: white;
+}
+header nav li a{
+    border-color: white;
+}
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active{
+    color: slategray;
+    border-color: lightseagreen;
+    font-weight: inherit;
+
+}
+article nav ul li a{
+    color: lightseagreen;
+}
+h3{
+    color: slategray;
+}
+h2{
+    color: lightseagreen;
+}
