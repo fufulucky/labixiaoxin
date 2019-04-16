@@ -114,7 +114,8 @@ function BANNER() {
     container.onmouseout=play;
     console.log(w);
     play();
-    //highlight();
+    highlight();
+    prepareInternalnav();
 }
 addload(BANNER);
 /*

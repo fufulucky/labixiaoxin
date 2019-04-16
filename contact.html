@@ -30,7 +30,7 @@
     <nav>
         <ul class="xin">
             <li>
-                <a href="main.html">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="about.html">About</a>
@@ -48,6 +48,27 @@
     </nav>
 </header>
 <article>
+    <h1> contact us</h1>
+    <form method="post" action="submit.html">
+        <fieldset>
+            <p>
+                <label for="name"> Name:</label><br>
+                <input type="text" id="name" name="name"
+                placeholder="Your name" required="required">
+            </p>
+            <p>
+                <label for="email"> Email:</label><br>
+                <input type="text" id="email" name="email"
+                       placeholder="Your email address" required="required">
+            </p>
+            <p>
+                <label for="message"> Message:</label><br>
+                <textarea cols="45" rows="7" id="message"
+                          name="message" placeholder="Write your message here" required="required"></textarea>
+            </p>
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
 
 </article>
 <script src="scripts/global.js"></script>

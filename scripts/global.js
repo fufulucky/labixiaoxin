@@ -53,7 +53,7 @@ function highlight() {
 function showSection(id) {
     var sections=document.getElementsByTagName("section");
     console.log(sections);
-    for(var i=1; i<sections.length;i++){
+    for(var i=0; i<sections.length;i++){
         console.log(sections[i].getAttribute("id"))
         console.log(id)
         if (sections[i].getAttribute("id")!=id) {
@@ -84,5 +84,47 @@ function prepareInternalnav() {
     }
 
 }
+function prepareImg() {
+    if (!document.createElement) return false;
+    var gallery=document.getElementById("gallery");
+    var holdimage=document.createElement("img");
+    holdimage.setAttribute("src","images/16.jpg");
+    holdimage.setAttribute("id","tag");
+    holdimage.setAttribute("alt","gallery");
+    var text=document.createElement("p");
+    text.setAttribute("id","description");
+    var content=document.createTextNode("choose an image");
+    text.appendChild(content);
+    console.log(gallery);
+    console.log(holdimage);
+    insertAfter(holdimage,gallery);
+    insertAfter(text,holdimage);
+}
+function prejudge() {
+    if (!document.getElementById) return false;
+    if(!document.getElementsByTagName) return false;
+    if (!document.getElementById("gallery")) return false;
+    var Images=document.getElementById("gallery");
+    var link=Images.getElementsByTagName("a");
+    for (var i=0;i<link.length;i++)
+    {
+        link[i].onclick=function () {
 
+            return !showPic(this);
+        }
+    }
+
+}
+function showPic(whichpic){
+    if (!document.getElementById("tag")) return false;
+    var source=whichpic.getAttribute("href");
+    var pic=document.getElementById("tag");
+    var tit=whichpic.getAttribute("title");
+    var des=document.getElementById("description")
+    pic.setAttribute("src",source);
+    des.firstChild.nodeValue=tit;
+    return true;
+}
+prepareImg();
+prejudge();
 

@@ -123,3 +123,27 @@ article{
 .showtext{
     float: left;
 }
+#xiaoxin{
+    display: block;
+}
+#chunribu{
+    display: none;
+}
+#gallery{
+    margin: 0 auto;
+}
+#gallery li{
+    display: inline;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+article h1{
+    text-align: center;
+}
+label{
+    display: block;
+}
+fieldset{
+    border: 0;
+}
